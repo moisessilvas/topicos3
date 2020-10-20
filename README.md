@@ -60,14 +60,16 @@ Clique no botão + presente ao lado da caixa de diálogo filter do Insomnia, e a
 Feito isso, será aberta uma página. No campo de `URL`, digite `localhost:3000/disciplina`. Mais abaixo, em Body, clique na seta que nos mostra mais opções e escolha `JSON`. Há um exemplo de como preencher esse corpo, sem que haja erros, a seguir.
 
 ```javascript
-[{
+[
+	{
 	"codigo": 394832,
 	"nome": "Gerência de Redes",
 	"professor": "Chefe",
 	"departamento": "ENE",
 	"QtdCreditos": 4,
 	"turma": "A"
-}]
+	}
+]
 ```
 
 Feito isso, clique em `Send`. 
@@ -80,18 +82,20 @@ Clique no botão + presente ao lado da caixa de diálogo filter do Insomnia, e a
 Feito isso, será aberta uma página. No campo de `URL`, digite `localhost:3000/disciplina`. Feito isso, clique em `Send`. Dessa forma, será mostrada uma janela com as seguintes informações. Note que ela condiz com o último registro feito, acrescidas de outras informações, como data de criação.
 
 ```javascript
-[{
-	"_id": "5f8e23fedfba3443448735bb",
-    "codigo": 394832,
-    "nome": "Gerência de Redes",
-    "professor": "Chefe",
-    "departamento": "ENE",
-    "QtdCreditos": 4,
-    "turma": "A",
-    "createdAt": "2020-10-19T23:40:46.234Z",
-    "updatedAt": "2020-10-19T23:40:46.234Z",
-    "id": 7
-}]
+[
+	{
+    	"_id": "5f8e23fedfba3443448735bb",
+    	"codigo": 394832,
+    	"nome": "Gerência de Redes",
+    	"professor": "Chefe",
+    	"departamento": "ENE",
+    	"QtdCreditos": 4,
+    	"turma": "A",
+    	"createdAt": "2020-10-19T23:40:46.234Z",
+    	"updatedAt": "2020-10-19T23:40:46.234Z",
+    	"id": 7
+	}
+]
 ```
 
 #### PUT
@@ -105,29 +109,31 @@ Feito isso, será aberta uma página. No campo de `URL`, digite `localhost:3000/
 Mais abaixo, em Body, clique na seta que nos mostra mais opções e escolha `JSON`. Há um exemplo de como preencher esse corpo, sem que haja erros.
 
 ```javascript
-[{
+[	
+	{
 	"nome": "Circuitos Elétricos",
 	"professor": "Rax"
-}]
+	}
+]
 ```
 
 Feito isso, clique em `Send`. Volte para a requisição `GET` e note que as informações foram realmente atualizadas. Elas estarão mais ou menos assim:
 
 ```javascript
-[{
+[
 	{
-    "_id": "5f8e23fedfba3443448735bb",
-    "codigo": 394832,
-    "nome": "Circuitos Elétricos",
-    "professor": "Rax",
-    "departamento": "ENE",
-    "QtdCreditos": 4,
-    "turma": "A",
-    "createdAt": "2020-10-19T23:40:46.234Z",
-    "updatedAt": "2020-10-20T00:05:46.577Z",
-    "id": 7
-  }
-}]
+    	"_id": "5f8e23fedfba3443448735bb",
+    	"codigo": 394832,
+    	"nome": "Circuitos Elétricos",
+    	"professor": "Rax",
+    	"departamento": "ENE",
+    	"QtdCreditos": 4,
+    	"turma": "A",
+    	"createdAt": "2020-10-19T23:40:46.234Z",
+    	"updatedAt": "2020-10-20T00:05:46.577Z",
+    	"id": 7
+  	}
+]
 ```
 
 #### DELETE
